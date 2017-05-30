@@ -2,6 +2,7 @@
 import sys
 import logging
 import optparse
+import magpie
 
 __author__ = 'Richard Brantley <rbrantle@redhat.com>'
 LOG_FORMAT = ("%(asctime)s %(levelname)s %(message)s")
@@ -58,6 +59,7 @@ def main():
         print "Running Insights Core Egg"
         sys.exit(0)
 
+    magpie.main()
     sys.exit(0)
 
 if __name__ == '__main__':
